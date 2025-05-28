@@ -31,7 +31,6 @@ export default function LandingPage() {
       <BenefitsSection />
       <ContactForm />
       <FutureSection />
-      <TestimonialsSection />
       <CtaSection />
       <Footer />
     </div>

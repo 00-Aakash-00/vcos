@@ -2,6 +2,7 @@
 
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import Image from "next/image";
 
 export function Header() {
   return (
@@ -9,10 +10,13 @@ export function Header() {
       <div className="max-w-7xl mx-auto py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-2">
-            <div className="w-8 h-8 gradient-primary rounded-lg flex items-center justify-center">
-              <div className="w-4 h-4 border-2 border-white-100 rounded-sm"></div>
-            </div>
-            <span className="text-2xl font-space-grotesk font-bold">VCOS</span>
+            <Image
+              src="/logo-vcos-white.png"
+              alt="VCOS Logo"
+              width={120}
+              height={40}
+              priority
+            />
           </div>
 
           <div className="hidden md:flex items-center space-x-8">
